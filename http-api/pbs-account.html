@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">PBS Account | Local Public Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="robots" content="noindex, nofollow"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.api.localstreaming.org/http-api/pbs-account"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="PBS Account | Local Public Docs"><meta data-rh="true" name="description" content="PBS Account endpoints implement the new Public Media SSO)"><meta data-rh="true" property="og:description" content="PBS Account endpoints implement the new Public Media SSO)"><link data-rh="true" rel="canonical" href="https://docs.api.localstreaming.org/http-api/pbs-account"><link data-rh="true" rel="alternate" href="https://docs.api.localstreaming.org/http-api/pbs-account" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.api.localstreaming.org/http-api/pbs-account" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"PBS Account","item":"https://docs.api.localstreaming.org/http-api/pbs-account"}]}</script><link rel="stylesheet" href="/assets/css/styles.858cabd8.css">
-<script src="/assets/js/runtime~main.1a618875.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.7b9cfaa4.js" defer="defer"></script>
 <script src="/assets/js/main.40d15b61.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -37,19 +37,18 @@ for details about the upstream API, but note that not all features are supported
 <h5 class="anchor anchorWithStickyNavbar_JmGV" id="type">Type<a href="#type" class="hash-link" aria-label="Direct link to Type" title="Direct link to Type">​</a></h5>
 <p>JSON in body.</p>
 <h5 class="anchor anchorWithStickyNavbar_JmGV" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h5>
-<table><thead><tr><th style="text-align:left"><strong>Parameter</strong></th><th style="text-align:center"><strong>Required</strong></th><th style="text-align:center"><strong>Type</strong></th><th style="text-align:left"><strong>Description</strong></th></tr></thead><tbody><tr><td style="text-align:left"><code>emailAddress</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">User email address.</td></tr><tr><td style="text-align:left"><code>firstName</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">User first name (1 - 25 characters).</td></tr><tr><td style="text-align:left"><code>lastName</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">User last name (1 - 25 characters).</td></tr><tr><td style="text-align:left"><code>password</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">Account password (8 - 90 characters, at leastone letter and one number).</td></tr><tr><td style="text-align:left"><code>stationId</code></td><td style="text-align:center">Yes</td><td style="text-align:center">UUID</td><td style="text-align:left">ID of the station associated with the request.</td></tr></tbody></table>
+<table><thead><tr><th style="text-align:left"><strong>Parameter</strong></th><th style="text-align:center"><strong>Required</strong></th><th style="text-align:center"><strong>Type</strong></th><th style="text-align:left"><strong>Description</strong></th></tr></thead><tbody><tr><td style="text-align:left"><code>emailAddress</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">User email address.</td></tr><tr><td style="text-align:left"><code>firstName</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">User first name (1 - 25 characters).</td></tr><tr><td style="text-align:left"><code>lastName</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">User last name (1 - 25 characters).</td></tr><tr><td style="text-align:left"><code>password</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">Account password (8 - 90 characters, at least one letter and one number).</td></tr><tr><td style="text-align:left"><code>stationId</code></td><td style="text-align:center">Yes</td><td style="text-align:center">UUID</td><td style="text-align:left">ID of the station associated with the request.</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_JmGV" id="responses">Responses<a href="#responses" class="hash-link" aria-label="Direct link to Responses" title="Direct link to Responses">​</a></h4>
 <div class="tabs-container tabList_J5MA"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_l0OV tabs__item--active">204 No Content</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">400 Bad Request</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">500 Internal Server Error</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_wHwb"><p>Indicates the account was created.</p></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>JSON body with:</p><ul>
 <li><code>reason</code>: Code string indicating the reason for the error:<!-- -->
 <ul>
-<li><code>BAD_PAYLOAD</code>: Unparseable JSON or missing required fields.</li>
-<li><code>PBS_ACCOUNT_CONFIG_NOT_FOUND</code>: Station does not have a related PBS Account Config.</li>
+<li><code>BAD_PAYLOAD</code>: Unparsable JSON or missing required fields.</li>
 <li><code>PBS_ACCOUNT_ALREADY_EXISTS</code>: PBS Account already registered with the requested email address.</li>
 <li><code>VALIDATION_ERRORS</code>: Field validation failed from the upstream API.</li>
 </ul>
 </li>
 <li><code>validationErrors</code>: Array of validation error strings for the viewer (when <code>reason</code> == <code>VALIDATION_ERRORS</code>).</li>
-</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an unhandleable error from the upstream API.</p></div></div></div>
+</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an error from the upstream API could not be handled.</p></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_JmGV" id="post-pbsaccountlogin"><code>POST /pbsAccount/login</code><a href="#post-pbsaccountlogin" class="hash-link" aria-label="Direct link to post-pbsaccountlogin" title="Direct link to post-pbsaccountlogin">​</a></h3>
 <p>The <a href="/webhooks/events#pbsaccoutlogin"><code>pbsAccount.login</code></a> webhook is sent on successful login.</p>
 <h4 class="anchor anchorWithStickyNavbar_JmGV" id="purpose-1">Purpose<a href="#purpose-1" class="hash-link" aria-label="Direct link to Purpose" title="Direct link to Purpose">​</a></h4>
@@ -73,13 +72,12 @@ VPPA agreement to the viewer before continuing.</li>
 </ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>JSON body with:</p><ul>
 <li><code>reason</code>: Code string indicating the reason for the error:<!-- -->
 <ul>
-<li><code>BAD_PAYLOAD</code>: Unparseable JSON or missing required fields.</li>
-<li><code>PBS_ACCOUNT_CONFIG_NOT_FOUND</code>: Station does not have a related PBS Account Config.</li>
+<li><code>BAD_PAYLOAD</code>: Unparsable JSON or missing required fields.</li>
 <li><code>VALIDATION_ERRORS</code>: Field validation failed from the upstream API.</li>
 </ul>
 </li>
 <li><code>validationErrors</code>: Array of validation error strings for the viewer (when <code>reason</code> == <code>VALIDATION_ERRORS</code>).</li>
-</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an unhandleable error from the upstream API.</p></div></div></div>
+</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an error from the upstream API that could not be handled.</p></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_JmGV" id="patch-pbsaccountprofile"><code>PATCH /pbsAccount/profile</code><a href="#patch-pbsaccountprofile" class="hash-link" aria-label="Direct link to patch-pbsaccountprofile" title="Direct link to patch-pbsaccountprofile">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_JmGV" id="purpose-2">Purpose<a href="#purpose-2" class="hash-link" aria-label="Direct link to Purpose" title="Direct link to Purpose">​</a></h4>
 <p>Updates a PBS Account profile.</p>
@@ -95,14 +93,13 @@ for details about the upstream API.</p>
 <div class="tabs-container tabList_J5MA"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_l0OV tabs__item--active">204 No Content</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">400 Bad Request</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">500 Internal Server Error</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_wHwb"><p>Indicates the profile was updated.</p></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>JSON body with:</p><ul>
 <li><code>reason</code>: Code string indicating the reason for the error:<!-- -->
 <ul>
-<li><code>BAD_PAYLOAD</code>: Unparseable JSON or missing required fields.</li>
-<li><code>PBS_ACCOUNT_CONFIG_NOT_FOUND</code>: Station does not have a related PBS Account Config.</li>
+<li><code>BAD_PAYLOAD</code>: Unparsable JSON or missing required fields.</li>
 <li><code>VIEWER_NOT_FOUND</code>: Viewer not found for provided ID.</li>
 <li><code>VALIDATION_ERRORS</code>: Field validation failed from the upstream API.</li>
 </ul>
 </li>
 <li><code>validationErrors</code>: Array of validation error strings for the viewer (when <code>reason</code> == <code>VALIDATION_ERRORS</code>).</li>
-</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an unhandleable error from the upstream API.</p></div></div></div>
+</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an error from the upstream API that could not be handled.</p></div></div></div>
 <h3 class="anchor anchorWithStickyNavbar_JmGV" id="post-pbsaccountforgotpassword"><code>POST /pbsAccount/forgotPassword</code><a href="#post-pbsaccountforgotpassword" class="hash-link" aria-label="Direct link to post-pbsaccountforgotpassword" title="Direct link to post-pbsaccountforgotpassword">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_JmGV" id="purpose-3">Purpose<a href="#purpose-3" class="hash-link" aria-label="Direct link to Purpose" title="Direct link to Purpose">​</a></h4>
 <p>Initiates a forgot password flow for a PBS Account.</p>
@@ -114,16 +111,15 @@ for details about the upstream API, but note that not all features are supported
 <h5 class="anchor anchorWithStickyNavbar_JmGV" id="parameters-3">Parameters<a href="#parameters-3" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h5>
 <table><thead><tr><th style="text-align:left"><strong>Parameter</strong></th><th style="text-align:center"><strong>Required</strong></th><th style="text-align:center"><strong>Type</strong></th><th style="text-align:left"><strong>Description</strong></th></tr></thead><tbody><tr><td style="text-align:left"><code>emailAddress</code></td><td style="text-align:center">Yes</td><td style="text-align:center">String</td><td style="text-align:left">Email address associated with the PBS Account.</td></tr><tr><td style="text-align:left"><code>stationId</code></td><td style="text-align:center">Yes</td><td style="text-align:center">UUID</td><td style="text-align:left">ID of the station associated with the request.</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_JmGV" id="responses-3">Responses<a href="#responses-3" class="hash-link" aria-label="Direct link to Responses" title="Direct link to Responses">​</a></h4>
-<div class="tabs-container tabList_J5MA"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_l0OV tabs__item--active">204 No Content</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">400 Bad Request</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">500 Internal Server Error</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_wHwb"><p>Indicates the forgot password flow was initiated.</p><p>The user will recieve an email and continue the reset process in a web browser.</p></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>JSON body with:</p><ul>
+<div class="tabs-container tabList_J5MA"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_l0OV tabs__item--active">204 No Content</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">400 Bad Request</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">500 Internal Server Error</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_wHwb"><p>Indicates the forgot password flow was initiated.</p><p>The user will receive an email and continue the reset process in a web browser.</p></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>JSON body with:</p><ul>
 <li><code>reason</code>: Code string indicating the reason for the error:<!-- -->
 <ul>
-<li><code>BAD_PAYLOAD</code>: Unparseable JSON or missing required fields.</li>
-<li><code>PBS_ACCOUNT_CONFIG_NOT_FOUND</code>: Station does not have a related PBS Account Config.</li>
+<li><code>BAD_PAYLOAD</code>: Unparsable JSON or missing required fields.</li>
 <li><code>VALIDATION_ERRORS</code>: Field validation failed from the upstream API.</li>
 </ul>
 </li>
 <li><code>validationErrors</code>: Array of validation error strings for the viewer (when <code>reason</code> == <code>VALIDATION_ERRORS</code>).</li>
-</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an unhandleable error from the upstream API.</p></div></div></div>
+</ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Indicates an error from the upstream API that could not be handled.</p></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_JmGV" id="public-media-sso-authorization">Public Media SSO authorization<a href="#public-media-sso-authorization" class="hash-link" aria-label="Direct link to Public Media SSO authorization" title="Direct link to Public Media SSO authorization">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_JmGV" id="post-pbsaccountssoinit"><code>POST /pbsAccount/sso/init</code><a href="#post-pbsaccountssoinit" class="hash-link" aria-label="Direct link to post-pbsaccountssoinit" title="Direct link to post-pbsaccountssoinit">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_JmGV" id="purpose-4">Purpose<a href="#purpose-4" class="hash-link" aria-label="Direct link to Purpose" title="Direct link to Purpose">​</a></h4>
@@ -145,8 +141,7 @@ for details about the upstream API, but note that not all features are supported
 </ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>JSON body with:</p><ul>
 <li><code>reason</code>: Code string indicating the reason for the error:<!-- -->
 <ul>
-<li><code>BAD_PAYLOAD</code>: Unparseable JSON or missing required fields.</li>
-<li><code>PBS_ACCOUNT_CONFIG_NOT_FOUND</code>: Station does not have a related PBS Account Config.</li>
+<li><code>BAD_PAYLOAD</code>: Unparsable JSON or missing required fields.</li>
 </ul>
 </li>
 </ul></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>Device note found with provided <code>deviceId</code>.</p></div></div></div>
@@ -165,9 +160,8 @@ for details about the upstream login finalization for Public Media SSO.</p>
 <div class="tabs-container tabList_J5MA"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_l0OV tabs__item--active">302 Found</li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_l0OV">400 Bad Request</li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_wHwb"><p>Redirect to the requested authorization provider.</p></div><div role="tabpanel" class="tabItem_wHwb" hidden=""><p>JSON body with:</p><ul>
 <li><code>reason</code>: Code string indicating the reason for the error:<!-- -->
 <ul>
-<li><code>BAD_PAYLOAD</code>: Missing required fields or invlaid OAuth2 state value.</li>
+<li><code>BAD_PAYLOAD</code>: Missing required fields or invalid OAuth2 state value.</li>
 <li><code>DEVICE_NOT_FOUND</code>: Device not found with state data.</li>
-<li><code>PBS_ACCOUNT_CONFIG_NOT_FOUND</code>: Station does not have a related PBS Account Config.</li>
 <li><code>STATION_NOT_FOUND</code>: Unknown station call sign.</li>
 </ul>
 </li>
