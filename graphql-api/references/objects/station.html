@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Station | Local Public Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="robots" content="noindex, nofollow"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.api.localstreaming.org/graphql-api/references/objects/station"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Station | Local Public Docs"><meta data-rh="true" name="description" content="PBS station metadata."><meta data-rh="true" property="og:description" content="PBS station metadata."><link data-rh="true" rel="canonical" href="https://docs.api.localstreaming.org/graphql-api/references/objects/station"><link data-rh="true" rel="alternate" href="https://docs.api.localstreaming.org/graphql-api/references/objects/station" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.api.localstreaming.org/graphql-api/references/objects/station" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Station","item":"https://docs.api.localstreaming.org/graphql-api/references/objects/station"}]}</script><link rel="stylesheet" href="/assets/css/styles.b20bf305.css">
-<script src="/assets/js/runtime~main.6d3d652b.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e3ed831b.js" defer="defer"></script>
 <script src="/assets/js/main.7d660c1a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -46,7 +46,7 @@
 <h5 class="anchor anchorTargetStickyNavbar_tleR" id="stationimageprofilestring---"><a href="#" class=""><code style="font-weight:normal">Station.image.<b>profile</b></code></a><span style="font-weight:normal;font-size:.5em;color:var(--ifm-color-secondary-darkest)"> ● </span><a class="" href="/graphql-api/references/scalars/string"><code style="font-weight:normal"><b>String!</b></code></a> <span class="badge badge--secondary badge--non_null">non-null</span> <span class="badge badge--secondary">scalar</span> <span class="badge badge--secondary">references</span><a href="#stationimageprofilestring---" class="hash-link" aria-label="Direct link to stationimageprofilestring---" title="Direct link to stationimageprofilestring---" translate="no">​</a></h5>
 <h4 class="anchor anchorTargetStickyNavbar_tleR" id="stationimagesjson---"><a href="#" class=""><code style="font-weight:normal">Station.<b>images</b></code></a><span style="font-weight:normal;font-size:.5em;color:var(--ifm-color-secondary-darkest)"> ● </span><a class="" href="/graphql-api/references/scalars/json"><code style="font-weight:normal"><b>[JSON]!</b></code></a> <span class="badge badge--secondary badge--non_null">non-null</span> <span class="badge badge--secondary">scalar</span> <span class="badge badge--secondary">references</span><a href="#stationimagesjson---" class="hash-link" aria-label="Direct link to stationimagesjson---" title="Direct link to stationimagesjson---" translate="no">​</a></h4>
 <p>Raw images data for the station.</p>
-<p>**Some of these URLs will not render without transoform parameters**.</p>
+<p>**Some of these URLs will not render without transform parameters**.</p>
 <p>For transformable images, see the \<code>image\\</code> field.</p>
 <h4 class="anchor anchorTargetStickyNavbar_tleR" id="stationislocalpublicdemomemberboolean--"><a href="#" class=""><code style="font-weight:normal">Station.<b>isLocalPublicDemoMember</b></code></a><span style="font-weight:normal;font-size:.5em;color:var(--ifm-color-secondary-darkest)"> ● </span><a class="" href="/graphql-api/references/scalars/boolean"><code style="font-weight:normal"><b>Boolean</b></code></a> <span class="badge badge--secondary">scalar</span> <span class="badge badge--secondary">references</span><a href="#stationislocalpublicdemomemberboolean--" class="hash-link" aria-label="Direct link to stationislocalpublicdemomemberboolean--" title="Direct link to stationislocalpublicdemomemberboolean--" translate="no">​</a></h4>
 <p>Whether the station is an Local Public demo member.</p>
@@ -81,7 +81,7 @@
 <li class=""><code>qrCodeUrl</code>: the URL of a QR code for the URL, and</li>
 <li class=""><code>displayUrl</code>: the display version of the URL with scheme removed.</li>
 </ul>
-<p>When determing the URL to use for donation CTAs, frontends must check for
+<p>When determining the URL to use for donation CTAs, frontends must check for
 and use one of the following profiles (in order):</p>
 <ol>
 <li class="">profile name in the format <code>donate-url-$DEVICE_TYPE</code> (e.g., <code>donate-url-roku</code>),</li>
